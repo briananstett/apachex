@@ -89,8 +89,8 @@ def main():
             line = (re.compile(r'''(?P<ip>[\d.]*)\s-\s-\s\[
                                             (?P<timeStamp>[\d\w/:]*\s)
                                              [-\d]*]\s"
-                                             (?P<method>[\w]{3})\s
-                                             (?P<resource>[/.&?=^\w\-]*)\s
+                                             (?P<method>[\w]*)\s
+                                             (?P<resource>[/.&?=^\w\-\[\]]*)\s
                                              (?P<protocol>[HTP/.\d]*)"\s
                                              (?P<statusCode>[\d]*\s[\d]*)
                                         ''', re.X | re.MULTILINE | re.IGNORECASE))
