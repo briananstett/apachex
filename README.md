@@ -1,15 +1,11 @@
-# apachex
-python script to sorts through Apache2 access logs using regex. Apachex identifies log values that can then be used with filteres. Which options are specified and in which order tells Apachex which values to display and which order.
+APACHEX: 
+	Python script to aid in web server (Apache) system adminstration. Apachex uses a regular expressiong API to sort the log into value groups, then,output them to the user’s specifications. This allows the users to choose which values to output and in which order.
+	NOTE:
+		As of the writing of this document, Apachex only supports Apache access logs and therefore options are limited to the format of such log.
+  
 
-python apachex -itp access.log
-
-will display {ip address} {time stampe} {protocol} ---> in that order
-
-
-There are many options and other verbose output options.
-
-
-
+Scenario:
+	System adminstrator of a large company is tasked with maintaining the company’s web server. The largest log file of web server is the access log and therefore difficult to sort through in search of key values. The adminstrator could use grep, would require multiple layered commands, or sed, which is difficult to use and requires knowledge of regex. Apachex is the solution to by not only sorting the log but changing the output of the log.
 
 
 
